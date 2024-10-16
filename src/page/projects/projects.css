@@ -19,17 +19,21 @@
 .other-projects{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
 }
 
 @media(min-width:768px){
     .other-projects{
-        display: grid;
-        grid-template-columns: 250px 250px 250px;
-        justify-content: center;
-        margin: 0 auto;
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 4rem;
         max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .projects-padding{
+        max-width: 250px;
     }
 
     .projects h4{

@@ -12,9 +12,11 @@ export default function Projects(){
     const htmlProjects = posts.map(project =>{
         const {date, title, message, img, alt, link, codeLink} = project
         return (
-            <FadeIn key={crypto.randomUUID()}>
-                <Card date={date} title={title} message={message} img={img} alt={alt} link={link} codeLink={codeLink}/>
-            </FadeIn>
+            <div className="projects-padding">
+                <FadeIn key={crypto.randomUUID()}>
+                    <Card date={date} title={title} message={message} img={img} alt={alt} link={link} codeLink={codeLink}/>
+                </FadeIn>
+            </div>
         )
     })
     return (
