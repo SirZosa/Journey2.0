@@ -32,7 +32,11 @@
         max-width: 900px;
     }
 
-    h2{
+    .projects h4{
+        text-align: center;
+    }
+
+    .projects h2{
         text-align: center;
     }
 }

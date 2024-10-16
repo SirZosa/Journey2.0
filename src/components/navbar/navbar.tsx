@@ -4,7 +4,7 @@ import ProfilePic from "../profilepic/profilepic"
 import fb from '../../assets/Facebook.png'
 import ig from '../../assets/Instagram.png'
 import tw from '../../assets/Twitter.png'
-import yo from '../../img/yo.jpg'
+import yo from '/img/yo.jpg'
 import "./navbar.css"
 export default function Navbar(){
     const [open, setOpen] = useState<boolean>(false);

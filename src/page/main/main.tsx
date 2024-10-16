@@ -1,7 +1,7 @@
 import './main.css'
 import ProfilePic from '../../components/profilepic/profilepic'
 import FadeIn from '../../components/fadein/fadein'
-import yo from "../../img/yo.jpg"
+import yo from "/img/yo.jpg"
 export default function Main(){
     return(
         <FadeIn>

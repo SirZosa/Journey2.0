@@ -2,3 +2,9 @@
     line-height: 1.5rem;
     margin: 1rem 0;
 }
+
+@media (min-width:768px){
+    .about h2{
+        text-align: center;
+    }
+}
