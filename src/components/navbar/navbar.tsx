@@ -38,7 +38,7 @@ export default function Navbar(){
                 </div>
                 <div className="nav-socials">
                     <a href="https://www.instagram.com/omar.sosa.58/" target="_blanck"><img src={ig} alt="instagram logo" /></a>
-                    <a href="www.linkedin.com/in/omar-sosa-b5949a247" target="_blanck"><img src={lIn} alt="LinkedIn logo" /></a>
+                    <a href="https://www.linkedin.com/in/omar-sosa-b5949a247" target="_blanck"><img src={lIn} alt="LinkedIn logo" /></a>
                     <a href="https://github.com/SirZosa" target="_blanck"><img src={git} alt="Github logo" /></a>
                 </div>
             </div>
