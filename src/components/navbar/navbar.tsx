@@ -1,9 +1,9 @@
 import { useState } from "react"
 import Burger from "../burger-icon/burger"
 import ProfilePic from "../profilepic/profilepic"
-import lIn from '../../assets/linkedin.png'
-import git from '../../assets/github.png'
-import ig from '../../assets/instagram.png'
+import ig from '/img/instagram.png'
+import lIn from '/img/linkedin.png'
+import git from '/img/github.png'
 import yo from '/img/yo.jpg'
 import "./navbar.css"
 export default function Navbar(){

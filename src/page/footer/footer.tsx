@@ -1,7 +1,7 @@
 import './footer.css'
-import lIn from '../../assets/linkedin.png'
-import git from '../../assets/github.png'
-import ig from '../../assets/instagram.png'
+import ig from '/img/instagram.png'
+import lIn from '/img/linkedin.png'
+import git from '/img/github.png'
 export default function Footer(){
     return(
         <footer className='footer'>
