@@ -1,0 +1,30 @@
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    border-radius: 5px;
+}
+
+.date{
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: rgb(147, 153, 158);
+}
+
+.title{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.message{
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+}

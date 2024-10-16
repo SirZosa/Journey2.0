@@ -1,0 +1,64 @@
+.badge{
+    width:fit-content;
+    border-radius: 10px;
+    padding: 0.4rem 0.9rem;
+    border: 2px solid aliceblue;
+    background-color: 000;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.badge:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(0 0 2px currentColor)
+}
+
+.badge-skill{
+    font-size: 0.75rem;
+    font-weight: 600;
+    animation: glow-badge 3s infinite;
+}
+
+.default{
+    color: aliceblue;
+}
+
+.HTML{
+    color: #f57e00;
+}
+
+.CSS{
+    color: #00a7f5;
+}
+
+.JS{
+    color:#dcd809
+}
+
+.React{
+    color:#00d4f5
+}
+
+.Node{
+    color:#10941e
+}
+
+.MySQL{
+    color: #879c9f;
+}
+
+.TS{
+    color: #0090d2;
+}
+
+@keyframes glow-badge{
+    0%{
+        filter: drop-shadow(0 0 2px currentColor);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px currentColor);
+    }
+    100%{
+        filter: drop-shadow(0 0 2px currentColor);
+    }
+}

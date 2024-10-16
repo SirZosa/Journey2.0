@@ -1,0 +1,16 @@
+.glowing-header{
+    animation: glow-header 3s infinite;
+    font-size: 2rem;
+}
+
+@keyframes glow-header{
+    0%{
+        filter: drop-shadow(0 0 2px aliceblue);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px aliceblue);
+    }
+    100%{
+        filter: drop-shadow(0 0 2px aliceblue);
+    }
+}

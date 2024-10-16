@@ -1,0 +1,44 @@
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #cddc39;
+    animation: glow 3s infinite;
+}
+
+.xs{
+    width: 48px;
+    height: 48px;
+}
+
+.s{
+    width: 64px;
+    height: 64px;
+}
+
+.md{
+    width: 128px;
+    height: 128px;
+}
+
+.l{
+    width: 192px;
+    height: 192px;
+}
+
+.xl{
+    width: 256px;
+    height: 256px;
+}
+
+@keyframes glow{
+    0%{
+        filter: drop-shadow(0 0 0 #ff5722);
+    }
+    50%{
+        filter: drop-shadow(0 0 16px #ff5722);
+    }
+    100%{
+        filter: drop-shadow(0 0 0 #ff5722);
+    }
+}

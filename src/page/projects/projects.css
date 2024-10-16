@@ -1,0 +1,38 @@
+.projects{
+    margin: 1rem 0;
+}
+
+.projects h2, .projects h4{
+    margin-bottom: 2rem;
+}
+
+.projects h4{
+    margin: 2rem 0;
+}
+
+.important-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.other-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+@media(min-width:768px){
+    .other-projects{
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    h2{
+        text-align: center;
+    }
+}

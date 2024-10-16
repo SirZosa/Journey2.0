@@ -1,0 +1,28 @@
+.main{
+    margin-top: 96px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-container img{
+    margin: 0 auto;
+}
+
+.description p{
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+@media(min-width:768px){
+    .main-container{
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        max-width: 900px;
+    }
+}
+
