@@ -1,9 +1,9 @@
 import { useState } from "react"
 import Burger from "../burger-icon/burger"
 import ProfilePic from "../profilepic/profilepic"
-import fb from '../../assets/Facebook.png'
-import ig from '../../assets/Instagram.png'
-import tw from '../../assets/Twitter.png'
+import lIn from '../../assets/linkedin.png'
+import git from '../../assets/github.png'
+import ig from '../../assets/instagram.png'
 import yo from '/img/yo.jpg'
 import "./navbar.css"
 export default function Navbar(){
@@ -37,9 +37,9 @@ export default function Navbar(){
                     <a onClick={()=> setOpen(false)} href="#contact">CONTACT</a>
                 </div>
                 <div className="nav-socials">
-                    <a href="#"><img src={ig} alt="instagram logo" /></a>
-                    <a href="#"><img src={fb} alt="facebook logo" /></a>
-                    <a href="#"><img src={tw} alt="twitter logo" /></a>
+                    <a href="https://www.instagram.com/omar.sosa.58/" target="_blanck"><img src={ig} alt="instagram logo" /></a>
+                    <a href="www.linkedin.com/in/omar-sosa-b5949a247" target="_blanck"><img src={lIn} alt="LinkedIn logo" /></a>
+                    <a href="https://github.com/SirZosa" target="_blanck"><img src={git} alt="Github logo" /></a>
                 </div>
             </div>
         </nav>

@@ -76,6 +76,12 @@ nav{
     justify-content: space-around;
 }
 
+.nav-socials img{
+    width: 48px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
 .nav-links{
     display: none;
 }

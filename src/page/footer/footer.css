@@ -1,0 +1,27 @@
+.footer{
+    background-color: black;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.connect p{
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.footer-socials {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-socials img{
+    width: 48px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.copyright{
+    text-align: center;
+}

@@ -19,7 +19,7 @@
     animation: glow-badge 3s infinite;
 }
 
-.default{
+.default, .Java{
     color: aliceblue;
 }
 
@@ -31,7 +31,7 @@
     color: #00a7f5;
 }
 
-.JS{
+.JS, .JavaScript{
     color:#dcd809
 }
 
@@ -47,7 +47,7 @@
     color: #879c9f;
 }
 
-.TS{
+.TS, .TypeScript{
     color: #0090d2;
 }
 
