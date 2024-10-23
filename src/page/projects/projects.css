@@ -12,6 +12,8 @@
 
 .important-projects{
     display: flex;
+    width: fit-content;
+    margin: 0 auto;
     flex-direction: column;
     gap: 2rem;
 }
@@ -19,7 +21,7 @@
 .other-projects{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 @media(min-width:768px){
@@ -28,13 +30,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 4rem;
+        gap: 2rem;
         max-width: 900px;
         margin: 0 auto;
     }
 
     .projects-padding{
-        max-width: 250px;
+        max-width: 270px;
     }
 
     .projects h4{

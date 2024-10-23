@@ -11,11 +11,15 @@
 
 html{
   position: relative;
-  background: radial-gradient(circle at center ,#282828, #282828 10%, transparent 10%, transparent  20%, #282828 20%, #282828 30%, transparent 30%, transparent 40%, #282828 40%, #282828 50%, transparent 50%, transparent 60%, #282828 60%, #282828 70%, transparent 70%, transparent 80%, #282828 80%, #282828 90%, transparent 90%);
-  background-size: 3em 3em;
+  background-image: url('/hollowed-boxes.svg');
+  background-size: 4em 4em;
   background-color: #001100;
   opacity: 1;
   scroll-behavior: smooth;
+}
+
+svg{
+  fill: aliceblue;
 }
 
 html::before{
@@ -25,7 +29,7 @@ html::before{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* adjust opacity */
+    background-color: rgba(0, 0, 0, 0.6); /* adjust opacity */
     z-index: -1;
 }
 
