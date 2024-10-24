@@ -1,11 +1,11 @@
 import './main.css'
 import ProfilePic from '../../components/profilepic/profilepic'
-import GlassCard from '../../components/glass-card/glasscard'
+import FadeIn from '../../components/fadein/fadein'
 import yo from "/img/yo.jpg"
 export default function Main(){
     return(
                 <section id='main' className="main">
-            <GlassCard>
+            <FadeIn>
                     <div className="main-container">
                         <ProfilePic src={yo} size='xl'/>
                         <div className="description">
@@ -16,7 +16,7 @@ export default function Main(){
                             Currently pursuing a Master's degree to be more prepared for real world challenges.</p>
                         </div>
                     </div>
-            </GlassCard>
+            </FadeIn>
                 </section>
     )
 }
