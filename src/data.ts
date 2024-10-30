@@ -1,5 +1,14 @@
 export const posts = [
     {
+        date:"OCT 30, 2024",
+        title:"Movie Search",
+        message:"Search movies on an app with optimized code using react hooks and a debouncer.",
+        img:"/img/moviesearch.webp",
+        alt:"movie search image",
+        link:"https://omars-movie-search.netlify.app/",
+        codeLink:"https://github.com/SirZosa/movie-search"
+    },
+    {
         date:"SEP 30, 2024",
         title:"Restaurant",
         message:"A responsive single page application.",
