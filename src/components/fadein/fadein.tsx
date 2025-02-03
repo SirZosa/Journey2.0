@@ -1,38 +1,43 @@
-import './fadein.css'
-import { useState, useEffect, useRef } from 'react'
+import './fadein.css';
+import { useState, useRef, useEffect } from 'react';
 
 type Props = {
   children: React.JSX.Element;
-}
+};
 
 export default function FadeIn({ children }: Props) {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (elementRef.current && !isVisible) {
-        const rect = elementRef.current.getBoundingClientRect();
-        const viewportHeight = window.innerHeight;
-
-        if (rect.top < viewportHeight/1.5) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
           setIsVisible(true);
-          window.removeEventListener('scroll', handleScroll); // Remove listener
+          observer.unobserve(entry.target); // Stop observing once visible
         }
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the element is visible
       }
-    };
+    );
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
     };
-  }, [elementRef, isVisible]) // Add isVisible to dependency array
+  }, []);
 
-  const nameClass = isVisible ? 'fade visible' : "fade not-visible";
+  const nameClass = isVisible ? 'fade visible' : 'fade not-visible';
 
   return (
-    <div ref={elementRef} className={nameClass}>{children}</div>
-  )
+    <div ref={elementRef} className={nameClass}>
+      {children}
+    </div>
+  );
 }
