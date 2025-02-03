@@ -12,6 +12,11 @@ export default function FadeIn({ children, threshold=0.5, classNames='' }: Props
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!('IntersectionObserver' in window)) {
+      console.error('IntersectionObserver is not supported in this browser.');
+      setIsVisible(true); // Fallback: make the element visible immediately
+      return;
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
