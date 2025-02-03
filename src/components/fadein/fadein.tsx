@@ -4,9 +4,10 @@ import { useState, useRef, useEffect } from 'react';
 type Props = {
   children: React.JSX.Element;
   threshold?: number;
+  classNames?: string;
 };
 
-export default function FadeIn({ children, threshold=0.5 }: Props) {
+export default function FadeIn({ children, threshold=0.5, classNames='' }: Props) {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -34,7 +35,7 @@ export default function FadeIn({ children, threshold=0.5 }: Props) {
     };
   }, []);
 
-  const nameClass = isVisible ? 'fade visible' : 'fade not-visible';
+  const nameClass = isVisible ? `fade visible ${classNames}`: `fade not-visible ${classNames}`;
 
   return (
     <div ref={elementRef} className={nameClass}>
