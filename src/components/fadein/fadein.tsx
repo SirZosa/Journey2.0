@@ -3,9 +3,10 @@ import { useState, useRef, useEffect } from 'react';
 
 type Props = {
   children: React.JSX.Element;
+  threshold?: number;
 };
 
-export default function FadeIn({ children }: Props) {
+export default function FadeIn({ children, threshold=0.5 }: Props) {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -18,7 +19,7 @@ export default function FadeIn({ children }: Props) {
         }
       },
       {
-        threshold: 0.5, // Trigger when 50% of the element is visible
+        threshold, // Trigger when 50% of the element is visible
       }
     );
 
