@@ -1,4 +1,12 @@
-export const posts = [
+export const posts = [{
+    date:"FEB 7, 2025",
+    title:"Social App",
+    message:"This app is still in development stage",
+    img:"/img/socialapp.webp",
+    alt:"socialapp image",
+    link:"https://omars-social-app.netlify.app/",
+    codeLink:"https://github.com/SirZosa/Social-app"
+},
     {
         date:"OCT 30, 2024",
         title:"Movie Search",
