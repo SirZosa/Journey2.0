@@ -6,7 +6,7 @@ export const posts = [
     img:"/img/socialapp.webp",
     alt:"socialapp image",
     link:"https://omars-social-apps.netlify.app/",
-    codeLink:"https://github.com/SirZosa/Social-app"
+    codeLink:"https://github.com/SirZosa/social-app-api-integrated"
 },
     {
         date:"OCT 30, 2024",

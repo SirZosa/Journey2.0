@@ -5,6 +5,7 @@ import Card from '../../components/card/card'
 import commerce from '/img/omars-ecommerce.webp'
 import quiz from '/img/quizzical.webp'
 import typeing from '/img/typegame.webp'
+import socialapp from '/img/socialapp.webp'
 import { posts } from '../../data'
 import GlassCard from '../../components/glass-card/glasscard'
 import FadeIn from '../../components/fadein/fadein'
@@ -27,6 +28,11 @@ export default function Projects(){
             </FadeIn>
             <div className="important-projects">
                 <FadeIn threshold={0.15}>
+                    <GlassCard>
+                        <ImportantCard src={socialapp} liveUrl='https://omars-social-apps.netlify.app' codeUrl='https://github.com/SirZosa/social-app-api-integrated' title='Social App' skills={['HTML', 'CSS', 'TS', 'React', 'Node Js', 'Express Js', 'MySQL']}>A social app that allows users to share their ideas by making posts.Improvements to the project may come in the future. Projects is built using the MVC architecture.</ImportantCard>
+                    </GlassCard>        
+                </FadeIn>
+                <FadeIn threshold={0.2}>
                     <GlassCard>
                         <ImportantCard src={commerce} liveUrl='https://omars-commerce.netlify.app/' codeUrl='https://github.com/SirZosa/EcommerceAPI' title='Ecommerce' skills={['HTML', 'CSS', 'JS', 'React', 'Node Js', 'Express Js', 'MySQL']}>A very complete E-commerce app that allows users to create and modify their profiles, add items to their shopping carts and see their complete orders at the end. Used many technologies in order to achieve this web app. Used the MVC architecture for this project.</ImportantCard>
                     </GlassCard>        
