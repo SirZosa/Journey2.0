@@ -4,7 +4,7 @@ import Badge from '../../components/badge/badge'
 
 export default function About(){
 
-    const skills = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React JS', 'Java', 'Node Js', 'Express Js', 'MySQL']
+    const skills = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React JS', 'Java', 'Node Js', 'Express Js', 'MySQL', 'Python']
     const htmlSkills = skills.map(skill => {
         return (
             <Badge attr={skill}>{skill}</Badge>
